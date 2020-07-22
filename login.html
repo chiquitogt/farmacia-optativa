@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/estilo_registro_login.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">Farmacia</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="index.html">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link" href="registro.html">Registro</a></li>
+                    <li class="menu__item"><a class="menu__link select" href="login.html">Ingresar</a></li>
+                    <li class="menu__item"><a class="menu__link" href="about.html">Acerca de Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="h11">Iniciar Sesion</h1>
+    <form action="" method="get" class="form-register" onsubmit="return iniciar();">
+        <h2 class="form__titulo">Ingresa tus datos</h2>
+        <div class="contenedor-inputs">
+            
+            <input type="text" id="usuario" name="usuario" minlength="5" maxlength="20" placeholder="Usuario" class="input-100" required>
+            <!-- clave.
+            Campo obligatorio, entre 6-20 carácteres
+            Sólo se permite cualquier caracter -->
+            <input type="password" id="clave" name="clave" placeholder="Contraseña" minlength="6" maxlength="20" class="input-100" required>
+            <input type="submit" id="btn" value="Iniciar Sesion" class="btn-enviar">
+            <p class="form__link">No tienes cuenta? <a href="registro.html">Registrate Aquí</a></p>
+            <a class="btn-cancelar" href="index.html" style="text-decoration:none">Cancelar</a>
+        </div>
+        
+    </form>
+    <footer class="footer1">
+        <div class="social">
+            <a href="" class="fab fa-facebook-square"></a>
+            <a href="" class="fab fa-twitter-square"></a>
+        </div>
+        <p class="copy">&copy; Farmacia 2020 - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/menu.js"></script>
+</body>
+</html>

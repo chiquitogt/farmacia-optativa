@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Turnos</title>
+    <link rel="stylesheet" href="css/estilo_turno.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+    <script src="js/fecha.js"></script>
+    <script src="js/turno.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">Farmacia</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" href="index2.html">Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link select" href="#">Turnos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="about2.html">Acerca de Nosotros</a></li>
+                    <li class="menu__item"><a class="menu__link" href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1>Turnos</h1>
+    <form action="" method="get" id="idser" class="form-register" onsubmit="return validar();">
+        <h2 class="form__titulo">Llene los campos</h2>
+        <div class="contenedor-inputs">
+            <!-- Nombre y apellido.
+            Campo obligatorio, entre 6-20 carácteres
+            Sólo se permiten letras -->
+            <input type="text" id="nombre" name="nombre" placeholder="Apellidos/Nombres" minlength="6" maxlength="20" required pattern="[A-Za-z0-9]+" class="input-100">
+            <label class="input-100">Tipo de documento:</label>
+            <p class="input-48"><input type="radio" name="transporte" value="1" required>   Cedula de identidad</p>
+            <p class="input-48"><input type="radio" name="transporte" value="2">   Pasaporte</p>
+            <p class="input-48"><input type="radio" name="transporte" value="3">   RUC</p>
+            <input type="text" id="cedula" name="cedula" placeholder="No. Cédula" minlength="6" maxlength="15" required pattern="[0-9]+" class="input-100" required>
+            <input type="email" id="correo" name="correo" placeholder="Correo electronico secundario" class="input-100">
+            <input type="text" id="telefono" name="telefono" placeholder="Celular" minlength="6" maxlength="20" required pattern="[0-9]+" class="input-100">
+            <label for="start" class="input-50">Fecha:</label>
+            <input type="date" id="fechaActual" name="trip-start" value="" min="2020-01-01" max="2020-12-12" class="input-50">
+            <label class="input-50" for="service">Escoja un servicio</label>
+            <select id="srv" name="serlist" form="idser" class="input-50">
+                <option value="Asesoramiento">Asesoramiento Medico</option>
+                <option value="Comprar">Comprar Medicinas</option>
+            </select>
+            <textarea name="" id="" class="input-100" placeholder="Escribe algun comentario sobre el servicio que quieres (Opcional)"></textarea>
+            <input type="submit" id="btn" value="Registrar" class="btn-enviar" >
+            
+        </div>
+        
+    </form>
+    <footer class="footer">
+        <div class="social">
+            <a href="" class="fab fa-facebook-square"></a>
+            <a href="" class="fab fa-twitter-square"></a>
+        </div>
+        <p class="copy">&copy; Farmacia 2020 - Todos los derechos reservados</p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <p>Si lees esto eres guapo</p>
+</body>
+</html>

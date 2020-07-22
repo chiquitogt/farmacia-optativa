@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo_admin.css">
+    <script src="https://kit.fontawesome.com/721b8f7618.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <h1 class="logo">Farmacia</h1>
+            <i class="fas fa-bars" id="btn-button"></i>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="index.html" >Inicio</a></li>
+                    <li class="menu__item"><a class="menu__link select" style="text-decoration:none" href="#">Panel</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="about.html">Acerca de Nosotros</a></li>
+                    <li class="menu__item"><a class="menu__link" style="text-decoration:none" href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="admin.html">Panel de Control</a></li>
+            <li class="active">Turnos</li>
+          </ol>
+        </div>
+      </section>
+  
+      <section id="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="list-group">
+                <a href="admin.html" class="list-group-item active color-principal">
+                  <span class="fas fa-columns" aria-hidden="true"></span> Panel de Control
+                </a>
+                <a href="#" class="list-group-item"><span class="fas fa-pager" aria-hidden="true"></span> Paginas <span class="badge">4</span></a>
+                <a href="#" class="list-group-item"><span class="fas fa-pen-square" aria-hidden="true"></span> Turnos <span class="badge">15</span></a>
+                <a href="#" class="list-group-item"><span class="fas fa-user" aria-hidden="true"></span> Usuarios <span class="badge">508</span></a>
+              </div>
+  
+              <div class="well">
+                <h4>Popularidad de busqueda</h4>
+                <div class="progress">
+                    <div class="barra-progreso" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                          60%
+                </div>
+              </div>
+              <h4>Porcentaje de confianza</h4>
+              <div class="progress">
+                  <div class="barra-progreso" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                        80%
+              </div>
+            </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              
+              <div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                  <h3 class="panel-title">Entradas</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                        <div class="col-md-12">
+                            <input class="form-control" type="hidden" placeholder="Filtrar entradas..." >
+                        </div>
+                  </div>
+                  <br>
+                  <table class="table table-striped table-hover">
+                        <tr>
+                          <th>Nombres</th>
+                          <th>Informacion</th>
+                          <th>Fecha</th>
+                          <th></th>
+                        </tr>
+                        <tr id="ocultar">
+                          <td>Saul Tucker</td>
+                          <td><span id="marca" class="fas fa-info-circle" aria-hidden="true"></span></td>
+                          <td>Julio 25, 2020</td>
+                          <td><button id="ocultarboton" class="btn btn-default" href="#" onclick="cimg1();">Aceptar</button> <button class="btn btn-danger" href="#" onclick="cimg5();">Cancelar</button> <img src="icon/check.svg" id="mostrar1" width="25px" style="display: none;"  ></td> 
+                        </tr>
+                        <tr id="oculta">
+                          <td>Roberth Chiquito</td>
+                          <td><span id="marca" class="fas fa-info-circle" aria-hidden="true"></span></img></td>
+                          <td>Julio 25, 2020</td>
+                          <td><button id="ocultarboto" class="btn btn-default" href="#" onclick="cimg2();">Aceptar</button> <button class="btn btn-danger" href="#" onclick="cimg6();">Cancelar</button> <img src="icon/check.svg" id="mostrar2" width="25px" style="display: none;" ></td>
+                        </tr>
+                        <tr id="ocult">
+                          <td>Zirene Baque</td>
+                          <td><span id="marca" class="fas fa-info-circle" aria-hidden="true"></span></td>
+                          <td>Julio 26, 2020</td>
+                          <td><a id="ocultarbot" class="btn btn-default" href="#" onclick="cimg3();">Aceptar</a> <a class="btn btn-danger" href="#" onclick="cimg7();">Cancelar</a> <img src="icon/check.svg" id="mostrar3" width="25px" style="display: none;"></td>
+                        </tr>
+                        <tr id="ocul">
+                          <td>Nicole Cacuango</td>
+                          <td><span id="marca" class="fas fa-info-circle" aria-hidden="true"></span></td>
+                          <td>Julio 30, 2020</td>
+                          <td><a id="ocultarbo" class="btn btn-default" href="#" onclick="cimg4();">Aceptar</a> <a class="btn btn-danger" href="#" onclick="cimg8();">Cancelar</a> <img src="icon/check.svg" id="mostrar4" width="25px" style="display: none;"></td>
+                        </tr>
+                      </table>
+                </div>
+                </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="social">
+            <a href="" class="fab fa-facebook-square"></a>
+            <a href="" class="fab fa-twitter-square"></a>
+        </div>
+        <p class="copy">&copy; Farmacia 2020 - Todos los derechos reservados</p>
+    </footer>
+      <script src="js/menu.js"></script>
+      <script src="js/cambios.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>
